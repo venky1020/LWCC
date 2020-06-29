@@ -1,0 +1,511 @@
+/* ==========================================================================
+   MISC
+   ========================================================================== */
+
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    height:100%; min-height:100%; position:relative;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers.
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+img {
+    max-width: 100%;
+}
+h2,
+h3 {
+    margin: 0 0 5px;
+    line-height: normal;
+    font-weight: normal;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.25em;
+}
+a {
+    text-decoration: none;
+}
+a,
+a:active,
+a:visited,
+a:focus {
+  outline: 0;
+}
+p {
+    margin: 0 0 10px;
+    line-height: 1.3em;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    margin-left: 17px;
+}
+ul.no-style {
+    list-style-type: none;
+    margin: 0 !important;
+}
+ul.left li {
+    float: left;
+    margin-right:10px;
+}
+ul.left li:last-of-type {
+    margin-right:0;
+}
+ul.zebra li:nth-of-type(odd) {
+    background-color: #f2f5fb;
+}
+ul.zebra li {
+    padding: 7px 20px;
+}
+.divider {
+    border-top:1px solid #dfe1e2;
+    padding-top: 20px;
+}
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px 30px;
+    text-align: center;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.icon_clock span {
+    padding-left: 25px;
+    background: url(../img/optimized/icon_clock.png) no-repeat 0 1px;
+}
+.icon_profile {
+    padding: 5px 0 5px 30px;
+    background: url(../img/optimized/icon_profile.png) no-repeat 0 4px;
+}
+.icon_search {
+    padding: 5px 25px 5px 0;
+    background: url(../img/optimized/icon_search.png) no-repeat 100% 4px;
+}
+/* ==========================================================================
+   GUTTERS
+   ========================================================================== */
+
+.row-pad [class*='col-']:last-of-type {
+    padding-right: 0;
+}
+
+/* 5px individual gutter */
+.gutter5 {
+    padding-right: 0.15em;
+    padding-left: 0.15em;
+}
+.gutter5:last-of-type {
+    padding-right: 0;
+}
+.gutter5:first-child {
+    padding-left: 0;
+}
+
+/* 20px total gutter */
+.row-pad20 [class*='col-'] {
+    padding-right: 20px;
+}
+.row-pad20 {
+    padding: 20px 0 20px 20px;
+}
+.row-pad20 [class*='col-']:last-of-type {
+    padding-right: 20px;
+}
+/* ==========================================================================
+   PAGE ELEMENTS
+   ========================================================================== */
+
+.inner {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.login #main {
+    padding: 20px;
+}
+.login-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../img/optimized/bg_login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.login .inner {
+    width: 100%;
+    max-width: 1446px;
+    margin: 0 auto;
+}
+#login-box,
+#register-box,
+#callouts {
+    width: 500px;
+}
+.widget {
+    border: 1px solid #dfe1e2;
+}
+ul#recent-items {
+    border-top: 1px solid #dfe1e2;
+}
+#featured-videos #content {
+    top: 0;
+    left: 0;
+}
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+
+input[type="text"] {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #030000;
+    width: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 0;
+    background-color: #eee;
+}
+.bg-gray input[type="text"] {
+    background-color: #fff;
+}
+.register input[type="text"] {
+    padding:5px 10px;
+    margin-bottom: 10px;
+}
+.radios label {
+    margin-right: 30px;
+}
+.radios input {
+    margin-right: 5px;
+}
+select {
+    width:100%;
+    height: 28px;
+    margin-bottom: 10px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 22px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../img/optimized/checkbox.png) left top no-repeat;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background: url(../img/optimized/checkbox.png) -22px top no-repeat;
+}
+.required label:after {
+    display: inline-block;
+    content: "\002A";
+    color:#ff0000;
+    font-size:16px;
+    padding-left: 5px;
+}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+#sticky_container {
+    width: 100%;
+    height: 108px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+#logo .sticky { 
+    display:none; 
+}
+#header #alpha-bar {
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home #header #banner {
+    background-image: url('../img/optimized/banner_interior.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 315px;
+    margin-top: 108px;
+}
+.sub #header #banner  {
+    height: 115px;
+    margin-top: 108px;
+}
+.products #header #banner {
+    background-image: url('../img/banner_products.jpg');
+}
+.training #header #banner {
+    background-image: url('../img/banner_training.jpg');
+}
+.marketing #header #banner {
+    background-image: url('../img/banner_marketing.jpg');
+}
+.sales #header #banner {
+    background-image: url('../img/banner_sales.jpg');
+}
+.connect #header #banner {
+    background-image: url('../img/banner_connect.jpg');
+}
+#banner-content {
+    top: 200px;
+    right: 100px;
+}
+.sub #banner-content { 
+    display: none;
+}
+#search-container {
+    bottom: 0;
+    right: 20px;
+}
+#breadcrumbs ul li a {
+    font-size:12px;
+    color: #030000;
+}
+
+/* ==========================================================================
+   NAV
+   ========================================================================== */
+#nav-container {
+    height:78px;
+}
+#nav {
+    bottom: 0px;
+    left: 0;
+}
+#nav li {
+    float: left;
+    margin-right: 30px;
+}
+#nav li a.top {
+    color: #fff;
+    font-size:16px;
+}
+
+#nav li a.top:hover,
+#nav li a.top.active,
+#nav li a.current-page {
+    color:#ffd503;
+}
+
+#nav .dropdown {
+    display: none;
+    width: 480px;
+    position: absolute;
+    z-index: 5;
+}
+#nav .dropdown #nav-top-arrow {
+    width: 100%;
+    height: 17px;
+    background-image: url(../img/optimized/nav_arrowbar_black.png);
+    background-repeat: no-repeat;
+}
+#nav .dropdown li {
+    float:none;
+    padding:3px 0;
+    margin:0;
+}
+#nav .dropdown li a { 
+    color:#8e8f8a;
+    font-size: 11px;
+}
+#nav .dropdown .tier-label,
+#nav .dropdown .tier-label a {
+    font-size:14px;
+    margin-bottom: 5px;
+    color: #595858;
+}
+#nav .dropdown .tier1 {
+    list-style-type: none;
+    margin: 0;
+    list-style-position: inside;
+    text-indent: -6px;
+    padding-left: 6px;
+}
+#nav .dropdown .tier1 li:before {
+    display: inline-block;
+    content: "";
+    background-image: url(../img/optimized/arrow_right_yellow.png);
+    background-repeat: no-repeat;
+    width: 3px;
+    height:6px;
+    padding-right: 6px;
+}
+#nav .dropdown #dropdown-bottom a {
+    background-image:url(../img/optimized/icon_arrow_right_gray.png);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+}
+.external a:after {
+    display:inline-block;
+    content:"";
+    width: 20px;
+    height: 12px;
+    background-image: url(../img/icon_external.png);
+    background-repeat: no-repeat;
+    background-position: 100% -1px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.login #footer ul {
+    margin: 0;
+    display: inline-block;
+}
+.login #footer ul li {
+    float: left;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.login #footer ul li:first-child {
+    padding-left: 0;
+}
+.login #footer ul li:after {
+    content: "|";
+    color: #fff;
+    padding-left: 8px;
+}
+.login #footer ul li:last-of-type:after {
+    display: none;
+}
+.login #footer ul li a {
+    color: #fff;
+    font-size: 12px;
+}
+#footer [class*='col-'] ul {
+    list-style-type: none;
+    margin: 0;
+}
+#footer ul.tier1 {
+    margin-bottom: 20px;
+}
+#footer ul.tier1 li,
+#footer ul.tier1 li a {
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+#footer ul.tier2 {
+    padding-top: 5px;
+}
+#footer ul.tier2 li {
+    text-transform: none;
+    font-weight: normal;
+    margin-bottom:10px;
+}
+#footer ul.tier2 li a {
+    font-size: 11px;
+    color: #8e8f8a;
+    text-transform: none;
+    font-weight: normal;
+}
+#footer-bottom #bottom-menu li {
+    padding-left:10px;
+    margin:0;
+}
+#footer-bottom #bottom-menu li:first-child {
+    padding-left: 0;
+}
+#footer-bottom #bottom-menu li:after {
+    content: "|";
+    color: #030000;
+    padding-left: 8px;
+}
+#footer-bottom #bottom-menu li:last-of-type:after {
+    display:none;
+}
+#footer-bottom #bottom-menu li a {
+    color: #030000;
+}
+#social-btns a {
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background-image: url(../img/optimized/icons_set_social.png);
+    background-repeat: no-repeat;
+    margin-right: 11px;
+}
+#social-btns a:last-of-type {
+    margin-right: 0;
+}
+#social-btns #linkedin {
+    background-position: -50px 0;
+}
+#social-btns #twitter {
+    background-position: -100px 0;
+}
+#social-btns #blog {
+    background-position: -150px 0;
+}
+#social-btns #youtube {
+    background-position: -199px 0;
+}
+#social-btns #google {
+    background-position: -248px 0;
+}

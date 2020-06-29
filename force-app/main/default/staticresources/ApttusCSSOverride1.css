@@ -1,0 +1,49 @@
+.main-cart-wrapper .line-item--name{
+	max-width: 100% !important;
+}
+
+.main-cart-col:first-child > div .pbBody .dataCol, .main-cart-col:first-child > div h3, .pbBody .main-cart-col:first-child > div .dataCol {
+		margin-top: 10% !important;
+	}	
+@-moz-document url-prefix() {
+	.main-cart-col:first-child > div .pbBody .dataCol, .main-cart-col:first-child > div h3, .pbBody .main-cart-col:first-child > div .dataCol {
+		margin-top: 45% !important;
+	}
+}
+
+.line-item-row .is--open > .submenu--optionlines, .line-item-row.is--open > td > div > div > ul, .line-item-row.is--open > td > ul {
+
+}
+
+
+.charge-label {
+   heigth:0rem;
+    visibility: hidden;
+    clear: both;
+    white-space: nowrap;
+}
+
+
+
+Product name fitting
+ .main-cart-col:first-child>div .pbBody .dataCol, .main-cart-col:first-child>div h3, .pbBody .main-cart-col:first-child>div .dataCol {
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 0;
+    line-height: 1.125rem;
+    vertical-align: baseline;
+    display: block;
+    font-family: ProximaNovaSoft-Regular;
+    width: 20rem;
+    word-break: normal;
+}
+
+
+.configure-product__product-name {
+    float: left;
+    word-break: break-word;
+}
+
+.field--picklist {
+    width: 12rem;
+}

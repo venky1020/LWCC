@@ -1,0 +1,37 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="vinputRecordId" type="String" />
+    <aura:attribute name="recordId" type="String" />
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}" />-->
+    <aura:attribute name="simpleRecord" type="Object" description="The record object to be displayed" />
+    <aura:attribute name="recordError" type="String" description="An error message bound to force:recordData" />
+    <force:recordData aura:id="recordLoader" recordId="{!v.recordId}" targetFields="{!v.simpleRecord}" targetError="{!v.recordError}" fields="Id, Name" />
+    <div class="slds-scope slds-align_absolute-center slds-scope slds-align--absolute-center">
+        <div class="slds-card slds-box--x-small slds-m-left--xx-small  slds-var-m-right_xx-small" style="width:1240px">
+            <div class="slds-text-heading_large slds-p-vertical--small">
+                <p class="slds-text-heading--medium">
+                    <lightning:formattedText title="LDS" value="Lightining Data Service" />
+                </p>
+            </div>
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="RecordId" value="RecordId" />
+                </p>
+            </div>
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="Id" value="{!v.simpleRecord.Name}" />
+                </p>
+            </div>
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <ui:inputtextarea aura:id="inputRecordId" class="slds-input" rows="1" value="{!v.vinputRecordId}" />
+                </p>
+            </div>
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="Submit" onclick="{!c.recordUpdated }" />
+                </p>
+            </div>
+        </div>
+    </div>
+</aura:component>

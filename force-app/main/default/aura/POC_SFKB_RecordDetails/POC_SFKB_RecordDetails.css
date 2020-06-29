@@ -1,0 +1,45 @@
+.THIS {
+   
+}
+
+.THIS .container {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  width: 1240px !important;
+}
+
+.THIS .container:before,
+.THIS .container:after {
+  display: table;
+  content: " ";
+}
+
+.THIS .container:after {
+  clear: both;
+}
+
+.THIS .container:before,
+.THIS .container:after {
+  display: table;
+  content: " ";
+}
+
+.THIS .container:after {
+  clear: both;
+}
+
+.THIS .document_title{
+  /* font-size:16px; */
+  font-size:20px;
+  /* color:#333; */
+  color:#505050;
+  background-color:#ededee;
+  line-height:24px;
+  margin:0 0 30px;
+  /* font-weight: bold; */
+  font-weight:normal;
+  text-align:left;
+  padding:25px 0px !important;
+}

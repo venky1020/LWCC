@@ -1,0 +1,36 @@
+#sticky_container {
+background:url('../img/header_new.png');
+    background-size: 60% 109%;
+    background-repeat: no-repeat;
+    background-color:white;
+}
+#nav li a.top {
+    color:#373737;
+}
+
+#nav li a.top:hover,
+#nav li a.top.active,
+#nav li a.current-page {
+   color:#ff4d00;
+}
+#dropdown-bottom
+{   
+    background-color:#ff7d00;
+    color:#ffffff;
+}
+#dropdown-bottom a
+{
+	color:#ffffff;
+}
+#nav .dropdown
+{
+    border-top:0px;
+}
+#banner
+{
+    height:150px !important;
+}
+#logo
+{
+    width:115%;
+}

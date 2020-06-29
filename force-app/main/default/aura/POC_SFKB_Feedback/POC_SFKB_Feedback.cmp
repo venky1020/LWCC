@@ -1,0 +1,115 @@
+<aura:component controller="FeedBackController" implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes"  access="global">
+    <aura:attribute name="SubmitButtonLabel" type="String" />
+    
+    <div class="tdPadding" style="padding-left: 25px;">
+        <div id="ctl00_PlaceHolderMain_EditModePanel10">
+            <div class="container">                
+                <table id="ctl00_PlaceHolderMain_EditModePanel10_control4_FeedbackTable" width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2 style="margin-left: 0px !important;">
+                                    Feedback</h2>
+                                <div class="questions" style="float: left;">
+                                    <div class="questions-description">
+                                        <h3 style="margin-left: 0px !important;font-size:16px;">
+                                            Did this KB document help you?</h3>
+                                        <div class="row">
+                                            <table id="ctl00_PlaceHolderMain_EditModePanel10_control4_RadioButtonList1" border="0"
+                                                   style="width: 100%;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input id="ctl00_PlaceHolderMain_EditModePanel10_control4_RadioButtonList1_0" type="radio"
+                                                                   name="ctl00$PlaceHolderMain$EditModePanel10$control4$RadioButtonList1" value="This document resolved my issue"
+                                                                   checked="checked"></input><label for="ctl00_PlaceHolderMain_EditModePanel10_control4_RadioButtonList1_0">This
+                                                            document resolved my issue</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input id="ctl00_PlaceHolderMain_EditModePanel10_control4_RadioButtonList1_1" type="radio"
+                                                                   name="ctl00$PlaceHolderMain$EditModePanel10$control4$RadioButtonList1" value="This document did not resolve my issue"></input><label
+                                                                                                                                                                                                        for="ctl00_PlaceHolderMain_EditModePanel10_control4_RadioButtonList1_1">This document
+                                                            did not resolve my issue</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input id="ctl00_PlaceHolderMain_EditModePanel10_control4_RadioButtonList1_2" type="radio"
+                                                                   name="ctl00$PlaceHolderMain$EditModePanel10$control4$RadioButtonList1" value="This document helped but additional information was required to resolve my issue"></input><label                                                                                                                               id="ctl00_PlaceHolderMain_EditModePanel10_control4_RadioButtonList1_2">This document
+                                                            helped but additional information was required to resolve my issue</label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="textbox-div">
+                                        <p style="margin: 0;">
+                                            What can we do to improve this information (2000 or fewer characters)</p>
+                                        <textarea name="ctl00$PlaceHolderMain$EditModePanel10$control4$TextBox3" rows="7"
+                                                  cols="50" id="ctl00_PlaceHolderMain_EditModePanel10_control4_TextBox3" class="area1"
+                                                  style="margin: 0;"> </textarea>
+                                    </div>
+                                    <br></br>
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span id="ctl00_PlaceHolderMain_EditModePanel8_control4_lblFeedback" 
+                                                          style="color:#01778F;font-size:8pt;font-weight:normal;font-family: Calibri (Body);">
+                                                        &nbsp;Thank you for your feedback.
+                                                        &nbsp;This will help us improve the quality of our Knowledge Base.
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="height: 50px">
+                                                    <input type="submit" name="ctl00$PlaceHolderMain$EditModePanel10$control4$Button1"
+                                                           value="Submit" 
+                                                           id="ctl00_PlaceHolderMain_EditModePanel10_control4_Button1" class="btn-submit"
+                                                           style="margin-left: 0;"></input>
+                                                   
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <input type="hidden" name="ctl00$PlaceHolderMain$EditModePanel10$control4$hdnFeedBack"
+                                           id="ctl00_PlaceHolderMain_EditModePanel10_control4_hdnFeedBack"></input>
+                                    <input type="hidden" name="ctl00$PlaceHolderMain$EditModePanel10$control4$hdnFeedBackDocumentTitleDTM"
+                                           id="ctl00_PlaceHolderMain_EditModePanel10_control4_hdnFeedBackDocumentTitleDTM"
+                                           value="ERROR: &quot;No more data to read from socket&quot; while using the Data Access Service in Informatica Cloud Application Integration"></input>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 20px">
+                                &nbsp;&nbsp;<span id="ctl00_PlaceHolderMain_EditModePanel10_control4_RequiredFieldValidator1"
+                                                  style="color: Red; visibility: hidden;">Select a value in 'Did this KB document
+                                help you?' section</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br></br>
+                <div class="clrBoth">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td id="FeedbackTableSec" valign="bottom" align="right">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                                                
+            </div>
+        </div>
+    </div>
+    
+</aura:component>

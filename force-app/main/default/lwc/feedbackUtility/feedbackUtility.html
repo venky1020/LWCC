@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <div>
+            <template if:true={kbrecords.data}>
+                <template for:each={kbrecords.data} for:item="kbrec">
+                    <p key={kbrec.Id}>{kbrec.ArticleNumber}</p>
+                </template>
+            </template>
+            <template if:true={kbrecords.error}>
+                No records found
+            </template>
+        </div>
+    </lightning-card>
+</template>

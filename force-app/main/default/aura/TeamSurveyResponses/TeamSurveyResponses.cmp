@@ -1,0 +1,105 @@
+<aura:component implements="force:appHostable" controller="CardboardController">
+  <ltng:require styles="{!$Resource.SLDS203 + '/assets/styles/lightning-design-system-ltng.css'}"/>
+  <!-- <div>Auto refresh in <span id="time"></span> minutes</div> -->
+  <aura:attribute name="recordsList" type="CardboardController.Cardboard_Wrapper[]"/>
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:iteration items="{!v.recordsList}" var="wrapper">
+        <aura:if isTrue="{!wrapper.IsCSAT}">
+            <article class="slds-card slds-card--narrow" >
+                <a Id="{!wrapper.surveyRecord.Id}" name="{!wrapper.surveyRecord.Case__c}" href="#" onclick="{!c.navigateToMyComponent}">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <img style="height:50px; width:50px;" src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/128/target-market-icon.png"/>
+                            </div>
+                            <div class="slds-media__body slds-truncate">
+                                <h2>
+                                    <a href="javascript:void(0);" class="slds-text-link--reset">
+                                        <span class="slds-text-heading--small">Respone for Case# {!wrapper.surveyRecord.Case__r.CaseNumber}</span>
+                                        <br/>{!wrapper.surveyRecord.Survey_Name__c}
+                                    </a>
+                                </h2>
+                            </div>
+                        </header>
+                    </div> 
+                    <div class="slds-card__body"><b>Satisfaction</b><br/>
+                        <i>{!wrapper.surveyRecord.Satisfaction__c}</i>    
+                    </div>
+                    <div class="slds-card__body"><b>Project</b><br/>
+                        <i>{!wrapper.surveyRecord.Case__r.Project__r.Name}</i>    
+                    </div>
+                    <div class="slds-card__body"><b>Description</b><br/>
+                        <i>{!wrapper.surveyRecord.Case__r.Description}</i>    
+                    </div>
+                    <div class="slds-card__body"><b>Comments</b><br/>
+                        <i>{!wrapper.surveyRecord.Comments__c}</i>    
+                    </div>
+                    <div class="slds-card__body"><b>Accessibility</b><br/>
+                        <i>{!wrapper.surveyRecord.Accessibility__c}</i>    
+                    </div>
+                    <div class="slds-card__body"><b>Knowledgeable</b><br/>
+                        <i>{!wrapper.surveyRecord.Knowledgable__c}</i>    
+                    </div>
+                    <div class="slds-card__body"><b>Timeliness</b><br/>
+                        <i>{!wrapper.surveyRecord.Timeliness__c}</i>    
+                    </div>
+                    <div class="slds-card__body"><b>Reslution</b><br/>
+                        <i>{!wrapper.surveyRecord.Resolution__c}</i>    
+                    </div>
+                    <div class="slds-card__footer"><span class="slds-badge">Negative Survey Response</span></div>
+                </a>
+            </article>
+        </aura:if>
+        <aura:if isTrue="{!wrapper.IsNoRecordsReturned}">
+            <article class="slds-card slds-card--narrow">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <img style="height:50px; width:50px;" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/128/process-warning-icon.png"/>
+                        </div>
+                        <div class="slds-media__body slds-truncate">
+                            <h2>
+                                <a href="javascript:void(0);" class="slds-text-link--reset">
+                                    <span class="slds-text-heading--small"></span>
+                                </a>
+                            </h2>
+                        </div>
+                    </header>
+                </div>  
+                <div class="slds-card__body"><br/>
+                    <i>&nbsp;&nbsp;&nbsp;Your team doesn't have any negative CSATs.</i>    
+                </div>
+                <div class="slds-card__footer"><span class="slds-badge"></span></div>
+            </article>
+        </aura:if>
+        <aura:if isTrue="{!wrapper.IsSubscriptionsNotFound}">
+            <article class="slds-card slds-card--narrow">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <img style="height:50px; width:50px;" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/128/process-warning-icon.png"/>
+                        </div>
+                        <div class="slds-media__body slds-truncate">
+                            <h2>
+                                <a href="javascript:void(0);" class="slds-text-link--reset">
+                                    <span class="slds-text-heading--small">No Responses found!!!</span>
+                                </a>
+                            </h2>
+                        </div>
+                    </header>
+                </div>  
+                <div class="slds-card__body"><b></b><br/>
+                    <i>No new CSAT responses.</i>    
+                </div>
+                <div class="slds-card__footer"><span class="slds-badge"></span></div>
+                
+            </article>
+        </aura:if>
+    </aura:iteration>
+        <aura:iteration items="{!v.recordsList}" var="wrapper">
+        
+    </aura:iteration>
+    <aura:iteration items="{!v.recordsList}" var="wrapper">
+        
+    </aura:iteration>
+</aura:component>

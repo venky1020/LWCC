@@ -1,0 +1,69 @@
+<aura:component controller="RecordDetailsController" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="KnowledgeArticleVersionList" type="Knowledge__kav[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+    <div class="slds-align_absolute-center" style="width:1240px">
+    <aura:iteration items="{!v.KnowledgeArticleVersionList}" var="varKnowledgeArticleVersion">
+        
+        <div class="slds-box" style="width:1240px;border:0px;" >
+            
+            <!-- Display a header with details about the record -->
+            <div class="slds-form--stacked slds-tile">
+                <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label"  style="font-size: 1rem;font-weight:600;">Title: </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.Title}"/>
+                    </div>
+                </div> 
+                <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;">Problem Description : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.Problem_Description__c}"/>
+                    </div>
+                </div>
+                 <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;">Cause : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.Cause__c}"/>
+                    </div>
+                </div> 
+                <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;">Solution : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.Problem_Solution__c}"/>
+                    </div>
+                </div> 
+                 <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;">More Information : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.More_Information__c}"/>
+                    </div>
+                </div> 
+                <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;">Product : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.Product__c}"/>
+                    </div>
+                </div> 
+                <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;" >Product Version : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.Product_Version__c}"/>
+                    </div>
+                </div> 
+                 <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;" >Article Number : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputRichText class="slds-text-longform" value="{!varKnowledgeArticleVersion.ArticleNumber}"/>
+                    </div>
+                </div>
+                 <div class="slds-form-element" style="border-bottom: 1px solid rgb(239, 239, 239); color: #4f4f4f">
+                    <label class="slds-form-element__label" style="font-size: 1rem;font-weight:600;" >Last Published Date : </label>
+                    <div class="slds-form-element__control">
+                        <ui:outputDateTime class="slds-text-longform" value="{!varKnowledgeArticleVersion.LastPublishedDate}"/>
+                    </div>
+                </div>                            
+            </div>            
+        </div>
+    </aura:iteration>
+</div>
+</aura:component>

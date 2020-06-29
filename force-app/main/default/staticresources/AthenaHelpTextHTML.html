@@ -1,0 +1,575 @@
+<html>
+<title></title>
+<head>
+    
+</head>
+<body>
+    <script type="text/javascript">
+
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+        var varresourceid = getUrlParameter('resourceid');
+        var newStyle = document.createElement('style');
+        newStyle.appendChild(document.createTextNode('\
+        @font-face {\
+            font-family: \'FuturaStd-Light\';\
+            src: url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Light.eot?orgId=00D0n0000000OJB#iefix\') format(\'embedded-opentype\'), url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Light.woff?orgId=00D0n0000000OJB\') format(\'woff\'), url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Light.ttf?orgId=00D0n0000000OJB\') format(\'truetype\'), url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Light.svg?orgId=00D0n0000000OJB#FuturaStd-Light\') format(\'svg\');\
+            font-weight: normal;\
+            font-style: normal;\
+        }\
+        '));
+        newStyle.appendChild(document.createTextNode('\
+        @font-face {\
+            font-family: \'FuturaStd-Medium\';\
+            src: url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Medium.eot?orgId=00D0n0000000OJB#iefix\') format(\'embedded-opentype\'), url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Medium.otf?orgId=00D0n0000000OJB\') format(\'opentype\'), url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Medium.woff?orgId=00D0n0000000OJB\') format(\'woff\'), url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Medium.ttf?orgId=00D0n0000000OJB\') format(\'truetype\'), url(\'/resource/' + varresourceid + '/Athena/kb-athena/fonts/FuturaStd-Medium.svg?orgId=00D0n0000000OJB#FuturaStd-Medium\') format(\'svg\');\
+            font-weight: normal;\
+            font-style: normal;\
+        }\
+        '));
+        document.head.appendChild(newStyle);
+
+    </script>
+    <style>
+        @charset "utf-8";
+        
+        body{        
+        color:#676767;
+        background-color:#fff;
+        margin:0px;
+        padding:0px;
+        }
+
+        body {
+          font-size: 14px !important;
+          font-family: 'FuturaStd-Medium' !important;
+          background:white;
+        }
+
+        .background {
+          width: 100%;
+          height: auto;
+        }
+
+        .document_title
+        {
+            background-color: #ededee !important;
+        }
+        .document_title{            
+            color:#505050;    
+            margin:0 0 30px;
+            font-weight: normal;
+            text-align:left;
+            border-bottom:none !important; background-color:#f6f6f6; padding:27px 0px; line-height:33px; word-break:normal;
+        }
+        .document_title {font-size:18px;line-height:24px;}
+        .containercustom
+        {
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 789px !important;
+        }
+                
+        .tabbar{padding-left:3px;}
+        .tabbar {color:#000 !important;font-size:18px !important;font-weight:normal !important;}
+        .tabbar {margin:30px 0px !important;}
+        .tabbar {margin:22px 0px !important;}
+
+        #table1 {width:100%; background-color:#f6f6f6; float:none; margin:25px 0px;}      
+        .contentPaddingLeft { width:100%; float:left;}
+        .tdPadding { padding: 10px 0px 0px 0px !important;}
+        #td_Applies_To {width:100% !important;}
+        #td_Applies_To td {padding:6px 0px !important;}        
+        #KBMetaDataTable td {padding:7px 5px 7px 0 !important;}
+        #layoutControlsContainer ol h6 {margin-top:16px !important; margin-bottom:11px;}
+        .questions h3 {color:#505050 !important; font-size:16px !important;}
+        .questions label {padding:0px 0px 9px 0px !important; float:left !important; color:#505050; font-size:16px; font-family:'FuturaStd-Medium' !important;}
+        #table1 p {font-size:16px !important; padding:10px 0px !important; width:100%; line-height:21px;font-family:'FuturaStd-Medium' !important;}
+        #table1 h2 {width:100% !important; border-top:0px solid #c8c8c8 !important;}
+        #table1 h3 {padding:10px 0px !important; font-weight:normal !important; font-family:'FuturaStd-Medium' !important;}
+        .questions-description {width:380px; float:left;margin-top: 12px;}
+        #table1 p {float:left;}
+        .textbox-div {float:left; margin-left:30px; width:330px;}
+    </style>
+    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+        <tbody>
+            <tr id="ctl00_PlaceHolderMain_tr_td_edit_prop_link">
+                <td id="ctl00_PlaceHolderMain_td_edit_prop_link" class="tdPadding">
+                </td>
+            </tr>
+            <tr>
+                <td class="tdPadding" id="layoutControlsContainer" style="word-break: break-word;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%;">
+                                    <div class="containercustom">
+                                        <table style="width: 100%">
+                                            <!--***************** Title Field*************************  -->
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- ***** Add for Title Watermark Feature *** Start ******** -->
+                                <!-- ***** Add for Title Watermark Feature *** End ******** -->
+                                <td>
+                                    <div class="abc" style="width: 100%; background-color: #ededee;">
+                                        <table style="width: auto; margin: 0px auto;" id="tablerating">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" class="document_title" style="padding-bottom: 10px" width="100%"
+                                                        id="KBTitleID">
+                                                        CHEATSHEET: Using Search Operators to Improve Search Results
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="containercustom">
+                        <!-- ***** Updated for Reveal Recommendation *** Start ******** -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td id="tdarticlecontent">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <!--***************** Content Field*************************  -->
+                                            <tbody>
+                                                <tr id="tr1_td_INFA_Content">
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tabbar contentPaddingLeft">
+                                                                        <div id="ctl00_PlaceHolderMain_EditModePanel2">
+                                                                            Content
+                                                                        </div>
+                                                                    </td>
+                                                                    <!--<td class="tabbar" ></td> -->
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr id="tr2_td_INFA_Content" height="2px">
+                                                </tr>
+                                                <tr id="tr3_td_INFA_Content">
+                                                    <td class="body" id="td_INFA_Content">
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield1_label" style="display: none">
+                                                            INFA_Content</div>
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield1__ControlWrapper_RichHtmlField" class="ms-rtestate-field"
+                                                            style="display: inline" aria-labelledby="ctl00_PlaceHolderMain_Richhtmlfield1_label">
+                                                            <h1 class="ms-rteElement-H1" style="font-size: 20px;">
+                                                                <span>Search Tips:&nbsp;
+                                                                    <br>
+                                                                </span>
+                                                            </h1>
+                                                            <span>
+                                                                <div>
+                                                                    <span>
+                                                                        <br>
+                                                                    </span>
+                                                                </div>
+                                                                You can improve your search results by adding operators to the search term. Here
+                                                                are a few ways to effectively use operators with your search terms:</span><p>
+                                                                </p>
+                                                            <span></span>
+                                                            <p>
+                                                                &nbsp;</p>
+                                                            <span></span>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="width: 8.2in">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="295" valign="top">
+                                                                            <p>
+                                                                                <span><strong>Query syntax example (Simple Queries)</strong></span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span><strong>Returns all items</strong></span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="295" valign="top">
+                                                                            <p>
+                                                                                <span>term1 OR term2</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>containing either term1 or term2 </span>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="295" valign="top">
+                                                                            <p>
+                                                                                <span>term1 NOT term2 </span>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                containing term1 but not term2</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="295" valign="top">
+                                                                            <p>
+                                                                                <span>term1 -term2</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>containing term1 but not term2</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="295" valign="top">
+                                                                            <p>
+                                                                                <span>"term1 term2 term3"</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>containing exactly the phrase between double-quotes (Use double quotes for error
+                                                                                    messages or any term with special characters like [],&lt;&gt;,::)</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="295" valign="top">
+                                                                            <p>
+                                                                                <span>+term</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>containing exactly term, not other words sharing the same root </span>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="295" valign="top">
+                                                                            <p>
+                                                                                <span>term*</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>containing term or any word starting with term and ending with any characters
+                                                                                    [Eg, SIP*]</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <span></span>
+                                                            <p>
+                                                                &nbsp;</p>
+                                                            <span></span>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="width: 8.2in">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span><strong>Query syntax example &nbsp;(Field Queries)</strong></span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span><strong>Returns all items </strong></span>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>@title=term</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span>with the title field containing term [@title=How To]</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>@title==term</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span>wit h exactly matching term</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>@date=yesterday</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span>with the date field being yesterday's date </span>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>@date=2015/01/01..2015/03/31</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span>with the date field for a range of dates </span>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <span></span>
+                                                            <p>
+                                                                &nbsp;</p>
+                                                            <span></span>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="width: 8.2in">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span><strong>Advanced (Field Queries) </strong></span>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span><strong>Returns all items</strong></span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>@athenaProduct=product name</span></p>
+                                                                            <p>
+                                                                                <span>&nbsp;</span></p>
+                                                                            <p>
+                                                                                <span>&nbsp;</span></p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span>with the product field containing the product name<br>
+                                                                                    [@athenaProduct=PowerCenter]</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" style="width: 450px">
+                                                                            <p>
+                                                                                <span>@athenaProductVersion=product version </span>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td valign="top" style="width: 500px">
+                                                                            <p>
+                                                                                <span>with the product version field containing the product version
+                                                                                    <br>
+                                                                                    [@athenaProductVersion=PowerCenter 9.0.1]</span></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" rowspan="1" style="width: 450px">
+                                                                            @athenaAuthor=authorname
+                                                                        </td>
+                                                                        <td valign="top" rowspan="1" style="width: 500px">
+                                                                            with the articles written by the authorname mentioned
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" rowspan="1" style="width: 450px">
+                                                                            @athenaauthor= (authorname1,&nbsp;authorname2,&nbsp;authorname3)
+                                                                        </td>
+                                                                        <td valign="top" rowspan="1" style="width: 500px">
+                                                                            &#8203;<span>with either of the enumerated values<br>
+                                                                                [</span> @athenaauthor= (Tom, Tim, Bob) ]<span><br>
+                                                                                </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" rowspan="1" style="width: 450px">
+                                                                            @infaproblemdescription= *term*
+                                                                        </td>
+                                                                        <td valign="top" rowspan="1" style="width: 500px">
+                                                                            with term mentioned anywhere in the Problem Description section of an article [@infaproblemdescription=
+                                                                            *exception* ]
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" rowspan="1" style="width: 450px">
+                                                                            &#8203;&#8203;<span style="line-height: 16px">@athenaauthor=authorname&nbsp;@date=2016/04/01..2016/06/30</span><p
+                                                                                class="MsoNormal">
+                                                                            </p>
+                                                                        </td>
+                                                                        <td valign="top" rowspan="1" style="width: 500px">
+                                                                            with articles written by the author during the specfied time range.&nbsp;<br>
+                                                                            [<span style="line-height: 16px">@athenaauthor=Ram&nbsp;@date=2016/04/01..2016/06/30
+                                                                                ]</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <span></span>
+                                                            <p>
+                                                                <span>&nbsp;</span></p>
+                                                            <span></span>
+                                                            <p>
+                                                                <strong>Disclaimer</strong></p>
+                                                            <span></span>
+                                                            <p>
+                                                                The Advanced Field queries are only for usage within Informatica. DO NOT share these
+                                                                with customers.</p>
+                                                            <span></span>
+                                                            <p>
+                                                                &nbsp;</p>
+                                                            <span></span>&#8203;&#8203;&#8203;&#8203;</div>
+                                                        <br>
+                                                        <br>
+                                                    </td>
+                                                </tr>
+                                                <!--***************** More Information*************************  -->
+                                                <tr id="tr1_td_INFA_More_Information" class="tr1Padding" style="display: none;">
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tabbar contentPaddingLeft">
+                                                                        More Information
+                                                                    </td>
+                                                                    <!--<td class="tabbar" ></td> -->
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr id="tr2_td_INFA_More_Information" height="2px" style="display: none;">
+                                                </tr>
+                                                <tr id="tr3_td_INFA_More_Information" style="display: none;">
+                                                    <td class="body" id="td_INFA_More_Information">
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield2_label" style="display: none">
+                                                            INFA_More_Information</div>
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield2__ControlWrapper_RichHtmlField" class="ms-rtestate-field"
+                                                            style="display: inline" aria-labelledby="ctl00_PlaceHolderMain_Richhtmlfield2_label">
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                    </td>
+                                                </tr>
+                                                <!--***************** Reference Field*************************  -->
+                                                <tr id="tr1_td_INFA_References" class="tr1Padding" style="display: none;">
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tabbar contentPaddingLeft">
+                                                                        Reference
+                                                                    </td>
+                                                                    <!--<td class="tabbar" ></td> -->
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="2px" id="tr2_td_INFA_References" style="display: none;">
+                                                </tr>
+                                                <tr id="tr3_td_INFA_References" style="display: none;">
+                                                    <td class="body contentPaddingBottom" id="td_INFA_References">
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield3_label" style="display: none">
+                                                            INFA_Reference</div>
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield3__ControlWrapper_RichHtmlField" class="ms-rtestate-field"
+                                                            style="display: inline" aria-labelledby="ctl00_PlaceHolderMain_Richhtmlfield3_label">
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                    </td>
+                                                </tr>
+                                                <!--***************** Related Docs field*************************  -->
+                                                <tr id="tr1_td_INFA_Related_Docs" class="tr1Padding">
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tabbar contentPaddingLeft">
+                                                                        Related Documents
+                                                                    </td>
+                                                                    <!--<td class="tabbar" ></td> -->
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="2px" id="tr2_td_INFA_Related_Docs">
+                                                </tr>
+                                                <tr id="tr3_td_INFA_Related_Docs">
+                                                    <td class="body" id="td_INFA_Related_Docs">
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield4_label" style="display: none">
+                                                            INFA_Related_Docs</div>
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield4__ControlWrapper_RichHtmlField" class="ms-rtestate-field"
+                                                            style="display: inline" aria-labelledby="ctl00_PlaceHolderMain_Richhtmlfield4_label">
+                                                            To view the&nbsp;Search d emo, click&nbsp;<a href="http://infasupport.screencasthost.com/watch/cDh1111NlN"
+                                                                target="_blank">Exploring</a><span> Search</span>.<div>
+                                                                    <div>
+                                                                        <br>
+                                                                    </div>
+                                                                    <div>
+                                                                        To view a demo of how to use&nbsp;wildcard and special characters, <a href="http://infasupport.screencasthost.com/watch/cD1ijZiI3A&#8203;">
+                                                                            Advance&nbsp;Queries</a>.&nbsp;<br>
+                                                                        <div>
+                                                                            <br>
+                                                                        </div>
+                                                                        &#8203;&#8203;</div>
+                                                                </div>
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                    </td>
+                                                </tr>
+                                                <!--***************** Attachments Field*************************  -->
+                                                <tr id="tr1_td_INFA_Attachments" class="tr1Padding" style="display: none;">
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tabbar contentPaddingLeft">
+                                                                        Attachments
+                                                                    </td>
+                                                                    <!--<td class="tabbar" ></td> -->
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="2px" id="tr2_td_INFA_Attachments" style="display: none;">
+                                                </tr>
+                                                <tr id="tr3_td_INFA_Attachments" style="display: none;">
+                                                    <td class="body" id="td_INFA_Attachments">
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield5_label" style="display: none">
+                                                            INFA_Attachments</div>
+                                                        <div id="ctl00_PlaceHolderMain_Richhtmlfield5__ControlWrapper_RichHtmlField" class="ms-rtestate-field"
+                                                            style="display: inline" aria-labelledby="ctl00_PlaceHolderMain_Richhtmlfield5_label">
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                    </td>
+                                                </tr>
+                                                <!--***************** Applies To Field*************************  -->
+                                                
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- ***** Updated for Reveal Recommendation *** End ******** -->
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

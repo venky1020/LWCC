@@ -1,0 +1,32 @@
+.THIS {
+    background-color:#000;
+}
+
+.THIS .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.THIS .container:before,
+.THIS .container:after {
+  display: table;
+  content: " ";
+}
+
+.THIS .container:after {
+  clear: both;
+}
+
+.THIS .container:before,
+.THIS .container:after {
+  display: table;
+  content: " ";
+}
+
+.THIS .container:after {
+  clear: both;
+}
+
+.THIS .header-div {width:100%; float:left;   position:relative;}

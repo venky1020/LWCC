@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title={comptitle}>
+        <div>
+            <template if:true={kbrecords.data}>
+                <template for:each={kbrecords.data} for:item="kbrec">
+                    <p key={kbrec.Id}>{kbrec.ArticleNumber}</p>
+                </template>
+            </template>
+            <template if:true={kbrecords.error}>
+                No records found
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card>
+        <c-lwcpushtopic 
+            channel="/topic/kbactivity" 
+            api-version="43.0"  
+            debug=true
+            onmessage={handleMessage} 
+            onerror={handleError} 
+            class="lwc_streaming_api-1">
+        </c-lwcpushtopic>
+    </lightning-card>
+    <lightning-card>
+        {payload}
+    </lightning-card>
+</template>

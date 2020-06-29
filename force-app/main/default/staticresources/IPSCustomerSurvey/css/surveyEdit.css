@@ -1,0 +1,19 @@
+    .bPageBlock .requiredInput .requiredBlock {
+        background-color: #c00;
+        position: absolute;
+        width: 3px;
+        height: 17px;
+        margin: 0;
+    }
+    
+    .bPageBlock .requiredInput {
+        position: relative;
+        height: 100%;
+     }
+	 
+	 .labelColModified{
+		float: right;
+		font-size: 91%;
+		padding-top: 2px; 
+		font-size:100%
+	} 

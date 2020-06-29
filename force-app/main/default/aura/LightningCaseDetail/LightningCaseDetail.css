@@ -1,0 +1,9 @@
+.THIS .sWrap {
+	overflow-y:auto;
+    overflow-x:auto;
+    height: 39rem;
+}
+
+.THIS.hidden {
+    display: none;
+}

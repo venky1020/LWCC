@@ -1,0 +1,291 @@
+.coveo-logo {
+    display: none;
+}
+
+.CoveoBoxHeader .CoveoSearchbox .CoveoQuerybox .magic-box-input > input, .CoveoBoxHeader .CoveoSearchbox .CoveoOmnibox .magic-box-input > input {
+    padding-left: 14px;
+}
+
+.CoveoBoxHeader .CoveoSearchbox .CoveoQuerybox .magic-box-clear, .CoveoBoxHeader .CoveoSearchbox .CoveoOmnibox .magic-box-clear {
+    float: right;
+    width: 60px !important;
+    right: 60px;
+}
+
+.CoveoBoxHeader .CoveoSearchbox .magic-box .magic-box-input .magic-box-underlay,
+.CoveoBoxHeader .CoveoSearchbox .magic-box .magic-box-input > input {
+    font-family: 'FuturaStd-Medium', "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.CoveoBoxHeader .CoveoSearchbox .magic-box .magic-box-suggestions {
+    font-family: 'FuturaStd-Medium', "Roboto", Helvetica, Arial, sans-serif;
+
+}
+.magic-box .magic-box-clear {
+    border-radius: 4px;
+}
+
+.CoveoOmnibox {
+    border-radius: 4px;
+}
+.CoveoSearchbox .magic-box {
+    background:#fff;
+}
+
+.magic-box .magic-box-input {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.magic-box .magic-box-clear {
+    border-radius: 4px;
+}
+
+.magic-box .magic-box-suggestions .magic-box-suggestion {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px;
+}
+
+
+/*.coveo-executing-query .CoveoSearchButton > .coveo-icon,*/
+.CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton:hover > .coveo-icon,
+.CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton > .coveo-icon {
+    font-size: 1px;
+    letter-spacing: normal;
+    color: transparent;
+    background-position: 0 0;
+    text-indent: 0px;
+    width:18px;
+    height: 18px;
+}
+
+.coveo-executing-query .CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton > .coveo-icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: -1687px -48px;
+    overflow: hidden;
+    width: 16px ;
+    height: 16px ;
+    text-indent: 16px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all {
+    .coveo-executing-query .CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton > .coveo-icon {
+        background-position: -1653px -48px;
+    }
+}
+
+.CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton {
+    border: 1px solid #ffd400;
+    background-color: #ffd400;
+    width: 60px;
+    right: 1px;
+    left: inherit;
+    /* float: right; */
+    border-radius: 0px;
+}
+
+.coveo-executing-query .CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton > .coveo-icon:before {
+    /*content: "\f021";*/
+    /*content:"\f1ce";*/
+    /*content: "\f110";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666;
+    -webkit-animation: fa-spin 1s infinite linear;
+    -moz-animation: fa-spin 1s infinite linear;
+    -o-animation: fa-spin 1s infinite linear;
+    animation: fa-spin 1s infinite linear;*/
+}
+.CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton > .coveo-icon:before {
+    content: "\f002";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666;
+}
+
+/*.coveo-executing-query .CoveoSearchButton > .coveo-icon {
+    -webkit-animation-name: none;
+    -moz-animation-name: none;
+     animation-name: none;
+}*/
+
+.CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton:hover > .coveo-icon:before{
+    color: #666;
+}
+
+.CoveoBoxHeader .CoveoSearchbox .CoveoSearchButton:hover {
+    background-color:#ca0;
+    border-color:#ca0;
+}
+
+.CoveoBoxHeader .coveo-box-popups-section {
+    border-bottom: 1px solid;
+    width: 100%;
+    min-height: 52px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #BCC3CA;
+    font-size: 0;
+    padding: 0px 0px 0px 0px;
+}
+.CoveoSearchInterface.CoveoBox .coveo-tab-section.coveo-inline-tab-section {
+    margin-top:0px;
+}
+.coveo-box-popup-toggle {
+    border: none !important;
+    background-color: transparent !important;
+    top: 0px;
+}
+
+.CoveoBoxPopup.athena-tab-action .coveo-box-popup-toggle {
+    position: relative;
+    border: 1px solid #264ea1 !important;
+    border-radius: 1000px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    line-height: inherit;
+    padding: 0;
+    font-size:13px
+}
+
+.CoveoBoxPopup.athena-tab-action .coveo-box-popup-toggle .coveo-box-popup-title {
+    display: none;
+}
+
+.CoveoBoxPopup.athena-tab-action .coveo-box-popup-toggle:before {
+    content: '\00B7\00B7\00B7';
+    color: #264ea1;
+    vertical-align: middle;
+    font-weight:500;
+}
+
+.CoveoBoxPopup.athena-tab-action {
+    margin-right: 10px;
+    margin-left: -10px;
+    border-bottom:none;
+    margin-bottom: 5px;
+    bottom: 0;
+}
+
+.CustomBoxPopup {
+    border: none;
+    background-color: transparent;
+}
+
+.CoveoBoxPopup.athena-tab-action.coveo-opened:after {
+    left: 25%;
+    bottom: -7px;
+}
+
+.CoveoBoxPopup .coveo-box-popup-toggle {
+    color: #666;
+}
+
+.CoveoBoxPopup.coveo-selected .coveo-box-popup-toggle,
+.CoveoBoxPopup .coveo-box-popup-toggle:hover,
+.CoveoBoxPopup.coveo-selected .coveo-box-popup-toggle:hover {
+    color: #333;
+}
+.CoveoBoxPopup.coveo-selected,
+.CustomBoxPopup.coveo-selected {
+    border-bottom: 6px solid #ffd400;
+    font-weight: 500;
+    color:#333;
+    top: 1px;
+ 
+}
+
+.CoveoBoxPopup,
+.CustomBoxPopup {
+    color:#666;
+    font-weight:400;
+    line-height:35px;
+    margin:0px;
+    border-bottom: 6px solid transparent;
+    top: 1px;
+}
+
+.CoveoBoxPopup .coveo-box-popup-toggle {
+    line-height:35px;
+}
+
+.athena-tab-action {
+    line-height:18px;
+}
+
+.CoveoBoxPopup:hover,
+.CustomBoxPopup:hover {
+    color:#333;
+}
+
+.athena-current-tab.coveo-opened:after {
+    display:none;
+}
+
+.athena-tab-section .CoveoTab {
+    text-indent: inherit;
+    font-size:14px !important;
+    top:0px;
+    border-radius: 0px !important;
+    height: inherit !important;
+}
+.athena-tab-section .CoveoTab.coveo-selected p,
+.athena-tab-section .CoveoTab p:hover {
+    border:none !important;
+    color:#333 !important;
+    font-weight: 500;
+}
+
+.athena-tab-section .CoveoTab p {
+     line-height:36px;
+ }
+
+.coveo-jive-icon {
+    font-size: 20px;
+}
+
+.CustomBoxPopup {
+    font-size: 14px;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    background-color: transparent;
+    display: inline-block;
+    background-clip: padding-box;
+    border-radius: 0px;
+    text-decoration: none;
+    -webkit-appearance: none;
+    white-space: normal;
+    cursor: pointer;
+}
+
+.CoveoBoxHeader .coveo-box-popups-section {
+    overflow: visible;
+}
+
+.CustomBoxPopup .CoveoTab:hover {
+    text-decoration: none;
+}
+
+.CoveoResult .CoveoBoxResultAction.coveo-displayed-in-menu {
+    border: 1px solid #264ea1 !important;
+}
+.CoveoResult .CoveoBoxResultAction.coveo-displayed-in-menu:after{
+    color: #264ea1;
+    font-weight: 400;
+}
+
+.CoveoBoxQuerySummary.coveo-displaying-no-results {
+    display: none;
+}

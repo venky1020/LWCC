@@ -1,0 +1,125 @@
+/* ==========================================
+ DISPLAY
+========================================== */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.block { display:block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.table { display:table; }
+.table-row { display: table-row; }
+.table-cell { display: table-cell; }
+.v-center {
+	display:table-cell;
+	vertical-align:middle;
+}
+.v-top { vertical-align: top; }
+.v-bottom { vertical-align: bottom; }
+.overflow-hidden { overflow: hidden; }
+.alpha10-black { background-color: rgba(0, 0, 0, 0.1); }
+.alpha30-black { background-color: rgba(0, 0, 0, 0.3); }
+.alpha40-black { background-color: rgba(0, 0, 0, 0.4); }
+.alpha50-black { background-color: rgba(0, 0, 0, 0.5); }
+.alpha80-black { background-color: rgba(0, 0, 0, 0.8); }
+
+.float-left { float:left; }
+.float-right { float:right; }
+
+/* ==========================================
+ BG COLORS
+========================================== */
+.bg-white { background-color: #fff; }
+.bg-black { background-color: #000; }
+.bg-gray { background-color: #eeeeee; }
+.bg-ltgray { background-color: #f9f9f9; }
+.bg-dkgray { background-color: #262626; }
+.bg-dkgray2 { background-color: #1d1d1d; }
+
+.bg-yellow,
+.btn-yellow { background-color:#ffd503; }
+.btn-blue { background-color:#254ea2; }
+
+/* ==========================================
+ FONT COLORS
+========================================== */
+.font-white,
+.btn-blue { color:#fff; }
+.font-black { color:#030000; }
+.font-red { color:#ff0000; }
+.font-yellow { color:#ffd503; }
+.font-blue { color:#254ea2; }
+.font-gray { color:#595858; }
+.font-dkgray { color:#59595a; }
+.font-ltgray { color:#8e8f8a; }
+
+/* ==========================================
+ FONTS
+========================================== */
+.font-10 { font-size: 10px; }
+.font-11 { font-size: 11px; }
+.font-12 { font-size: 12px; }
+.font-13 { font-size: 13px; }
+.font-14, p, ol, ul, a { font-size: 14px; }
+.font-15 { font-size: 15px; }
+.font-16 { font-size: 16px; }
+.font-18, h4 { font-size: 18px; }
+.font-25, h3 { font-size: 25px; }
+.font-40 { font-size: 40px; }
+
+.font-bold { font-weight:bold; }
+.font-normal { font-weight: normal; }
+
+.text-left { text-align:left; }
+.text-center { text-align:center; }
+.text-right { text-align:right; }
+.text-upper { text-transform:uppercase; }
+
+.lineheight-normal, p, ul li, ol li, a { line-height: normal; }
+.lineheight-14 { line-height: 14px; }
+
+/* ==========================================
+ PADDING
+========================================== */
+.pad-10 { padding: 10px; }
+.pad-15 { padding: 15px; }
+.pad-20 { padding: 20px; }
+.pad-25 { padding: 25px; }
+.pad-40 { padding: 40px; }
+.pad-top-5 { padding-top: 5px; }
+.pad-top-10 { padding-top: 10px; }
+.pad-top-20 { padding-top: 20px; }
+.pad-top-40 { padding-top: 40px; }
+.pad-bot-5 { padding-bottom: 5px; }
+.pad-bot-10 { padding-bottom: 10px; }
+.pad-bot-20 { padding-bottom: 20px; }
+.pad-bot-40 { padding-bottom: 40px; }
+.pad-left-10 { padding-left: 10px; }
+.pad-left-20 { padding-left: 20px; }
+.pad-left-40 { padding-left: 40px; }
+.pad-right-10 { padding-right:10px; }
+.pad-right-20 { padding-right:20px; }
+.pad-right-40 { padding-right:40px; }
+
+/* ==========================================
+ MARGIN
+========================================== */
+.marg-auto { margin: 0 auto; }
+.marg-flush { margin: 0; }
+.marg-top-10 { margin-top: 10px; }
+.marg-top-20 { margin-top: 20px; }
+.marg-bot-5 { margin-bottom: 5px; }
+.marg-bot-10 { margin-bottom: 10px; }
+.marg-bot-20 { margin-bottom: 20px; }
+.marg-left-10 { margin-left: 10px; }
+.marg-left-20 { margin-left: 20px; }
+.marg-right-10 { margin-right: 10px; }
+.marg-right-20 { margin-right: 20px; }
+.marg-right-30 { margin-right: 30px; }
+
+/* ==========================================
+ WIDTH
+========================================== */
+.width-100 { width: 100%; }
+.width-35 { width: 35%; }
+.width-40 { width: 40%; }
+.width-50 { width: 50%; }

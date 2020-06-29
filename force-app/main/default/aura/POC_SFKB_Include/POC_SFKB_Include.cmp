@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    <ltng:require styles="{!$Resource.KBSharepointSalesforceMigration}" />
+    <ltng:require styles="{!$Resource.KBSharepointSalesforceMigrationCoreV4}" />
+    <ltng:require styles="{!$Resource.KBSharepointSalesforceMigrationJs}" />
+</aura:component>

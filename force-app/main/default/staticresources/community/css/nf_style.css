@@ -1,0 +1,212 @@
+﻿/* 
+  HTML5 ✰ Boilerplate 
+  
+  style.css contains a reset, font normalization and some base styles.
+  
+  credit is left where credit is due.
+  much inspiration was taken from these projects:
+    yui.yahooapis.com/2.8.1/build/base/base.css
+    camendesign.com/design/
+    praegnanz.de/weblog/htmlcssjs-kickstart
+*/
+
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+body{
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1.6em;
+	font-size:80%;
+	width:100%;
+	height:100%;
+	position:relative;}
+
+h2.size22{
+	font-size:22px;
+	line-height:24px;
+	margin-bottom:20px;}
+h2{
+	color:#333;
+	font-weight:normal;
+	font-size:18px;
+	margin-bottom:10px;
+	font-family:ProximaNova-Semibold, Arial, Helvetica, sans-serif;}
+h3{
+	font-family:ProximaNova-Semibold, Arial, Helvetica, sans-serif;}
+h4{
+	color:#333;
+	font-weight:normal;
+	font-size:14px;
+	font-family:ProximaNova-Semibold, Arial, Helvetica, sans-serif;}
+
+#container{
+	width:100%}
+
+
+/* HEADER */
+#header{
+	width:100%;
+	background:#366896;
+	position:relative;
+	z-index:10000;
+	float:left;}
+
+#header .contents{
+	width:980px;
+	margin:auto;
+	position:relative;}
+	
+.header-content-container{
+	width:100%;
+	float:left;
+	background:#366896;	
+	min-height:97px;}
+
+#logo a{
+	display:block;
+	width:230px;
+	height:60px;
+	outline:none;
+	position:absolute;
+	top:24px;
+	left:10px;}
+
+
+
+/* MAIN */
+#main{
+	width:100%;
+	padding-bottom:70px;
+	background:url(_images/main-bg.png) repeat-x 0 0;
+	float:left;}
+
+#main .shadow{
+	background:url(_images/main-contents-bg.png) no-repeat center 0;	
+	min-height:660px;}
+
+#main .contents{
+	width:980px;
+	margin:auto;}
+
+
+/* SUB PAGE GENERAL */
+
+.sub-page #sub-page-hero{
+	height:335px;
+	position:relative;
+	margin-bottom:20px;	
+	}
+.sub-page #sub-page-hero h1{
+	font-size:23px;
+	line-height:37px;
+	font-weight:normal;
+	color: #00bb00;
+	position:absolute;
+	top:45px;
+	left:30px;
+	width:380px;
+	font-family:ProximaNova-Light, Arial, Helvetica, sans-serif;}
+.sub-page #sub-page-hero h3{
+	font-size:13px;
+	font-weight:normal;
+	color:#666;
+	position:absolute;
+	top:70px;
+	left:300px;
+	width:380px;}
+.sub-page #sub-page-hero p.description{
+	font-size:15px;
+	color:#666;
+	position:absolute;
+	top:125px;
+	left:30px;
+	width:400px;
+	font-family:ProximaNova-Light, Arial, Helvetica, sans-serif;}
+
+
+
+
+.information
+{
+	width: 100%;
+	height:450px;
+
+}
+.information .leftcol
+{
+	float: left;
+    margin-right: 10px;
+    padding-right: 30px;
+    width: 648px;
+	background: url("_images/vertical-seperator.gif") repeat-y scroll right top transparent;
+	height: 360px;
+}
+.information .leftcol li
+{
+	list-style-type: none;
+}
+.information .leftcol .col1
+{
+	width: 175px;
+	display: table
+}
+.information .leftcol .col2
+{
+	width: 650px;
+	margin-top: -365px;
+}
+.information .leftcol .col1 .regions1
+{
+	list-style-type: none;
+	width: 280px;
+	padding: 10px 10px 10px 30px;
+	float:left;
+}
+.information .leftcol .col2 .regions2
+{
+	list-style-type: none;
+	width: 350px;
+	padding: 10px 10px 10px 30px;
+	float:left;
+	margin-left: 350px
+}
+
+.information .rightcol
+{
+	float: left;
+    width: 240px;
+	padding-left: 20px;
+}
+.contents #sub-page-hero h1
+{
+	 color: #5D8626;
+    font-size: 23px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}

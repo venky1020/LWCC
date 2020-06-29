@@ -1,0 +1,44 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+  
+    <!-- PAGE HEADER -->
+    <div class="slds-page-header" style="background-color:#000;">
+        <!-- LAYOUT GRID -->
+        <div class="slds-grid">
+            <!-- GRID COL -->
+            <div class="slds-col slds-has-flexi-truncate">
+                <!-- HEADING AREA -->
+                
+                <div class="header-div">
+                    <div class="top-header">
+                        <div class="container container-login">
+                            <div class="row row-login">
+                                <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 padding-login">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 col-sm-12 col-lg-3">
+                                    <div class="logo">
+                                        <a href="#">
+                                      <img src="{!$Resource.Athena + '/kb-athena/images/logo.png'}"></img></a>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / HEADING AREA -->
+            </div>
+            <!-- ACTION BUTTONS -->
+            <!-- / ACTION BUTTONS -->
+        </div>
+        <!-- / LAYOUT GRID -->
+        <!-- PAGE HEADER DETAIL ROW -->
+        <!-- / PAGE HEADER DETAIL ROW -->
+    </div>
+    <!-- / PAGE HEADER -->
+</aura:component>

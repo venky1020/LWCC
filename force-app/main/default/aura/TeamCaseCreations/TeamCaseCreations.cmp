@@ -1,0 +1,103 @@
+<aura:component implements="force:appHostable" controller="CardboardController">
+  <ltng:require styles="{!$Resource.SLDS203 + '/assets/styles/lightning-design-system-ltng.css'}"/>
+  <!-- <div> Auto refresh in <span id="time"></span> minutes</div> -->
+  <aura:attribute name="subscribed_cases" type="CardboardController.Cardboard_Wrapper[]"/>
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:iteration items="{!v.subscribed_cases}" var="wrapper">
+        <aura:if isTrue="{!wrapper.IsCaseCreation}">
+            <article class="slds-card slds-card--narrow" >
+                <a Id="{!wrapper.caseRecord.Id}" name="{!wrapper.caseRecord.Id}" href="#" onclick="{!c.navigateToMyComponent}">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <img style="height:50px; width:50px;" src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/128/target-market-icon.png"/>
+                            </div>
+                            <div class="slds-media__body slds-truncate">
+                                <h2>
+                                    <a href="javascript:void(0);" class="slds-text-link--reset">
+                                        <span class="slds-text-heading--small">Case # {!wrapper.caseRecord.CaseNumber}</span>
+                                        <br/>{!wrapper.caseRecord.Project__r.Name}
+                                    </a>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>  
+                    <div class="slds-card__body"><b>{!wrapper.caseRecord.Subject}</b><br/>
+                        <i>{!wrapper.caseRecord.Description}</i>    
+                    </div>
+                    <div class="slds-card__footer"><span class="slds-badge">New Case Created</span></div>
+                </a>
+            </article>
+        </aura:if>
+        <aura:if isTrue="{!wrapper.IsCaseEscalation}">
+            <article class="slds-card slds-card--narrow">
+                <a Id="{!wrapper.caseRecord.Id}" name="{!wrapper.caseRecord.Id}" href="#" onclick="{!c.navigateToMyComponent}">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <img style="height:50px; width:50px;" src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/128/timer-icon.png"/>
+                            </div>
+                            <div class="slds-media__body slds-truncate">
+                                <h2>
+                                    <a href="javascript:void(0);" class="slds-text-link--reset">
+                                        <span class="slds-text-heading--small">Case # {!wrapper.caseRecord.CaseNumber}</span>
+                                    	<br/>{!wrapper.caseRecord.Project__r.Name}
+                                    </a>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>  
+                    <div class="slds-card__body"><b>{!wrapper.caseRecord.Subject}</b><br/>
+                        <i>{!wrapper.caseRecord.Description}</i>    
+                    </div>
+                    <div class="slds-card__footer"><span class="slds-badge">Case Escalation</span></div>
+                </a>
+            </article> 
+        </aura:if> 
+        <aura:if isTrue="{!wrapper.IsNoRecordsReturned}">
+            <article class="slds-card slds-card--narrow">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <img style="height:50px; width:50px;" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/128/process-warning-icon.png"/>
+                        </div>
+                        <div class="slds-media__body slds-truncate">
+                            <h2>
+                                <a href="javascript:void(0);" class="slds-text-link--reset">
+                                    <span class="slds-text-heading--small"></span>
+                                </a>
+                            </h2>
+                        </div>
+                    </header>
+                </div>  
+                <div class="slds-card__body"><br/>
+                    <i>&nbsp;&nbsp;&nbsp;No new cases assigned to the team.</i>    
+                </div>
+                <div class="slds-card__footer"><span class="slds-badge"></span></div>
+            </article>
+        </aura:if>
+        <aura:if isTrue="{!wrapper.IsSubscriptionsNotFound}">
+            <article class="slds-card slds-card--narrow">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <img style="height:50px; width:50px;" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/128/process-warning-icon.png"/>
+                        </div>
+                        <div class="slds-media__body slds-truncate">
+                            <h2>
+                                <a href="javascript:void(0);" class="slds-text-link--reset">
+                                    <span class="slds-text-heading--small">No Subscriptions found!!!</span>
+                                </a>
+                            </h2>
+                        </div>
+                    </header>
+                </div>  
+                <div class="slds-card__body"><b></b><br/>
+                    <i>You have not subscribed to any records. Please subscribe to receive updates.</i>    
+                </div>
+                <div class="slds-card__footer"><span class="slds-badge"></span></div>
+                
+            </article>
+        </aura:if>
+    </aura:iteration>
+</aura:component>

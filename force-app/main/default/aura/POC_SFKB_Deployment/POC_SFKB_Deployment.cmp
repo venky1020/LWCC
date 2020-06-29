@@ -1,0 +1,67 @@
+<aura:component controller="InfaCreateCustomObjectCls" implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="message" type="String" />
+    <aura:attribute name="countno" type="String" />
+    <aura:attribute name="recordId" type="String" />
+    <div class="slds-scope slds-align_absolute-center slds-scope slds-align--absolute-center">
+        <div class="slds-card slds-box--x-small slds-m-left--xx-small  slds-var-m-right_xx-small" style="width:1240px">
+            <div class="slds-text-heading_large slds-p-vertical--small">
+                <p class="slds-text-heading--medium">
+                    <lightning:formattedText title="LDS" value="Lightining Data Service" />
+                </p>
+            </div>
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="Message On the Progress" value="{!v.message}" />
+                </p>
+            </div>
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="Message On the Progress" value="{!v.countno}" />
+                </p>
+            </div>
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="CreateFieldByAPI" onclick="{!c.createCustomField }" />
+                </p>
+            </div>
+
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="ProvideProfielPermissionByDML" onclick="{!c.updateCustomModifiedFieldLevelSecurityDMLClient }" />
+                </p>
+            </div>
+
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="DeleteCustomFieldAPI" onclick="{!c.deleteCustomFieldAPIClient }" />
+                </p>
+            </div>
+
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="CreateLayoutForArticleDML" onclick="{!c.createLayoutForArticleDMLClient }" />
+                </p>
+            </div>
+
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="PublishAllDraftArticleDML" onclick="{!c.publishAllDraftArticleByDMLClient }" />
+                </p>
+            </div>
+
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="ArchiveAllPublishedArticleDML" onclick="{!c.archiveAllPublishedArticleByDMLClient }" />
+                </p>
+            </div>
+
+            <div class="slds-p-vertical--small">
+                <p class="slds-text-heading--small">
+                    <lightning:button variant="brand" label="DeleteAllArchivedArticleDML" onclick="{!c.deleteAllArchivedArticleByDMLClient }" />
+                </p>
+            </div>
+
+        </div>
+    </div>
+</aura:component>

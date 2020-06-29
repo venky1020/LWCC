@@ -1,0 +1,120 @@
+<aura:component implements="force:appHostable" controller="CardboardController" >
+    <ltng:require styles="{!$Resource.SLDS203 + '/assets/styles/lightning-design-system-ltng.css'}"/>
+    <aura:attribute name="caseId" type="String"/>
+    <aura:attribute name="detailType" type="String"/>
+    <aura:attribute name="displayType" type="String"/>
+    <aura:attribute name="caseRecord" type="Case"/>
+    <aura:attribute name="surveyRecord" type="Clicktools_Case_CSAT_Results__c"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" /><br/>
+    <span class="slds-align--absolute-center" style="background-color: #ffffff;width:100%; height: 4rem; position:absolute;top:0rem;">
+        <span >
+            <strong>{!v.displayType} for {!v.caseRecord.CaseNumber}</strong>
+        </span>&nbsp;&nbsp;
+        <span class="slds-badge slds-float--right">
+            <span onclick="{!c.handleClick}" data-record="{!v.caseRecord.Id}"><u>View Full Record</u></span>
+        </span>
+    </span>
+    <br/><br/>
+    <div aura:id="EscalationDetails" style="background-color: #ffffff;">
+        <ui:scrollerWrapper class="sWrap">
+            <span style="position:relative;left:0.5rem;">
+                <span class="slds-badge">Subject</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Subject}&nbsp;<br/><br/>
+                </span>
+                <span class="slds-badge">Project</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Project__r.Name}<br/><br/>
+                </span>
+                <span class="slds-badge">Priority</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Priority}<br/><br/>
+                </span>
+                <span class="slds-badge">Case Owner</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Owner.Name}<br/><br/>
+                </span>
+                <span class="slds-badge">Reason for escalation</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.ReasonForEscalation__c}<br/><br/>
+                </span>                
+                <span class="slds-badge">Escalation Notes</span><br/>
+                <div  class="slds-m-horizontal--medium">
+                    {!v.caseRecord.EscalationNotes__c}<br/><br/>
+                </div>    
+                <span class="slds-badge">Description</span><br/>
+                <div  class="slds-m-horizontal--medium" >
+                    {!v.caseRecord.Description}<br/><br/>
+                </div> 
+            </span>
+        </ui:scrollerWrapper>
+    </div>
+    <div aura:id="CreationDetails" style="background-color: #ffffff;">
+        <ui:scrollerWrapper class="sWrap">
+            <span style="position:relative;left:0.5rem;">   
+                <span class="slds-badge">Subject</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Subject}<br/><br/>
+                </span>
+                <span class="slds-badge">Case Owner</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Owner.Name}<br/><br/>
+                </span>
+                <span class="slds-badge">Created Date</span><br/>
+                <span style="position:relative;left:1rem;">
+                    <ui:outputDateTime value="{!v.caseRecord.CreatedDate}"/><br/><br/>
+                </span>
+                <span class="slds-badge">Priority</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Priority}<br/><br/>
+                </span>
+                <span class="slds-badge">Product</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Dev_Product__c}<br/><br/>
+                </span>
+                <span class="slds-badge">Description</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Description}<br/><br/>
+                </span>
+                <span class="slds-badge">Project</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Project__r.Name}<br/><br/>
+                </span>
+                <span class="slds-badge">Version</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Product_Version__c}<br/><br/>
+                </span>
+                <span class="slds-badge">Description</span><br/>
+                <div  class="slds-m-horizontal--medium" >
+                    {!v.caseRecord.Description}<br/><br/>
+                </div> 
+            </span>
+        </ui:scrollerWrapper>
+    </div>
+    <div aura:id="CSATDetails" style="background-color: #ffffff;">
+        <ui:scrollerWrapper class="sWrap">
+            <span style="position:relative;left:0.5rem;">
+                <span class="slds-badge">Subject</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Subject}<br/><br/>
+                </span>
+                <span class="slds-badge">Case Owner</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Owner.Name}<br/><br/>
+                </span>
+                <span class="slds-badge">Created Date</span><br/>
+                <span style="position:relative;left:1rem;">
+                    <ui:outputDateTime value="{!v.caseRecord.CreatedDate}"/><br/><br/>
+                </span>
+                <span class="slds-badge">Priority</span><br/>
+                <span style="position:relative;left:1rem;">
+                    {!v.caseRecord.Priority}<br/><br/>
+                </span>
+                <span class="slds-badge">Description</span><br/>
+                <div  class=".slds-is-absolute" style="right:1rem;left:1rem;">
+                    {!v.caseRecord.Description}<br/><br/>
+                </div>    
+            </span>
+        </ui:scrollerWrapper>
+    </div>
+</aura:component>

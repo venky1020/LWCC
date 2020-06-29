@@ -1,0 +1,352 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+
+/*body {
+          padding-top: 50px;
+          padding-bottom: 20px;
+        }*/
+
+html,
+body {
+    font-family: 'FuturaStd-Medium', sans-serif !important;
+}
+
+.coveo-logo {
+    display: none;
+}
+/*.navbar-inverse {
+    background-color: #000;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+#navbar {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.userAuthDetails {
+    width: auto;
+    float: right;
+    list-style-type: none;
+    width: auto;
+    margin: 0px;
+}
+
+.userAuthDetails .login {
+    float: right;
+    height: auto;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.userAuthDetails .login > li {
+    float: left;
+    display: inline;
+    margin: 0px 0px;
+    color: #939598;
+    padding-right: 8px;
+}
+
+.feedback {
+    width: 40px;
+    float: right;
+    line-height: 22px;
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 0px;
+    background: #000;
+    position: relative;
+    z-index: 100;
+    background: -webkit-linear-gradient(right, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+    background: -o-linear-gradient(right, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+    background: -ms-linear-gradient(right, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1);
+    line-height: 23px;
+}
+
+.menu .breadcrumb {
+    padding: 3px 0px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 11px;
+}
+
+.bannerimage-home {
+    width: 100%;
+    height: 371px;
+    background-image: url(//kb.informatica.com/_Layouts/InformaticaKBMasterPage/Images/Banner.jpg);
+    background-repeat: no-repeat;
+}
+
+.bannerimage-home .banner-text {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 0;
+}
+
+.bannerimage-home .bgRept {
+    background-color: transparent !important;
+    min-height: 371px;
+    padding: 0px !important;
+    z-index: 2;
+    position: relative;
+}
+
+.bgRept {
+    width: 100%;
+    height: auto;
+    margin-top: 0px !important;
+    padding: 0px !important;
+    float: left;
+     background-image: url("../../InformaticaKBMasterPage/Images/Banner.jpg") !important;
+    background-color: #f2f2f2 !important;
+    border: none !important;
+    background-position: center center;
+}
+
+#search-section {
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 33px 0px 0px 0px;
+    height: 165px;
+}
+*/
+
+#search-section .magic-box .magic-box-input .magic-box-underlay,
+#search-section .magic-box .magic-box-input > input {
+    font-family: "FuturaStd-Medium", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    outline: none;
+    letter-spacing: 0;
+    line-height: 25px !important;
+    height: 48px !important;
+}
+
+#search-section .magic-box .magic-box-suggestions {
+    font-family: "FuturaStd-Medium", Helvetica, Arial, sans-serif;
+}
+
+.CoveoOmnibox {
+    border-radius: 4px;
+}
+
+button.btn.btn-default.btn-search.CoveoSearchButton {
+    z-index: inherit;
+}
+
+.CoveoSearchbox .magic-box {
+    background:#fff;
+}
+.CoveoSearchInterface {
+    min-height: inherit !important;
+    font-family: 'FuturaStd-Medium', sans-serif !important;
+    font-weight: 300;
+    padding:0 !important;
+}
+
+.coveo-interfaceEditor-bar {
+    position: absolute;
+}
+
+.athena-kb-icon.coveo-small {
+    margin: 8px 10px 0px;
+}
+
+/*#featured-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+}
+
+#featured-section > [class^='col-'] {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.CoveoResult {
+    border-bottom: none;
+    margin: 15px 0px 15px 20px;
+}
+
+.coveo-tab-dropdown {
+    height: 50px;
+    border: 1px solid #9e9e9e;
+    margin-left: 25px;
+    min-width: 170px;
+    border-radius: 0px;
+    border-color: transparent;
+}
+
+.CoveoResultLink, a.CoveoResultLink, .CoveoResult a.CoveoResultLink {
+    color: #264ea1 !important;
+    font-weight: 400;
+}
+.CoveoResultLink:hover, a.CoveoResultLink:hover, .CoveoResult a.CoveoResultLink:hover {
+    text-decoration: underline;
+    color: #264ea1 !important;
+}
+
+.CoveoOmnibox {
+    border-radius: 4px;
+}
+.CoveoSearchbox .magic-box {
+    background:#fff;
+}
+
+.magic-box .magic-box-input {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.magic-box .magic-box-clear {
+    border-radius: 4px;
+}
+
+.magic-box .magic-box-suggestions .magic-box-suggestion {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px;
+}
+
+/*.coveo-executing-query .CoveoSearchButton > .coveo-icon,*/
+.CoveoSearchButton:hover > .coveo-icon,
+.CoveoSearchButton > .coveo-icon {
+    font-size: 1px;
+    letter-spacing: normal;
+    color: transparent;
+    background-position: 0 0;
+    text-indent: 0px;
+    width:18px;
+    height: 18px;
+}
+
+.coveo-executing-query .CoveoSearchButton > .coveo-icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: -1687px -48px;
+    overflow: hidden;
+    width: 16px ;
+    height: 16px ;
+    text-indent: 16px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all {
+    .coveo-executing-query .CoveoSearchButton > .coveo-icon {
+        background-position: -1653px -48px;
+    }
+}
+
+.CoveoSearchButton {
+    border: 1px solid #ffd400;
+    background-color: #ffd400;
+}
+
+.coveo-executing-query .CoveoSearchButton > .coveo-icon:before {
+    /*content: "\f021";*/
+    /*content:"\f1ce";*/
+    /*content: "\f110";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666;
+    -webkit-animation: fa-spin 1s infinite linear;
+    -moz-animation: fa-spin 1s infinite linear;
+    -o-animation: fa-spin 1s infinite linear;
+    animation: fa-spin 1s infinite linear;*/
+}
+.CoveoSearchButton > .coveo-icon:before {
+    content: "\f002";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #666;
+}
+
+/*.coveo-executing-query .CoveoSearchButton > .coveo-icon {
+    -webkit-animation-name: none;
+    -moz-animation-name: none;
+     animation-name: none;
+}*/
+
+.CoveoSearchButton:hover > .coveo-icon:before{
+    color: #666;
+}
+
+.CoveoSearchButton:hover {
+    background-color:#ca0;
+    border-color:#ca0;
+}
+
+#support-section, #signup-section, #feature-section {
+    margin: 30px auto;
+}
+
+#support-section p,
+#signup-section p,
+#feature-section p {
+    width: 333px;
+    margin: 0 auto;
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+.img-thumb {
+    font-style: normal;
+    line-height: 22px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px none currentcolor;
+    color: rgb(51, 51, 51);
+    text-transform: none;
+    text-indent: 0px;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    float: none;
+    display: block;
+    white-space: normal;
+    max-width: 140px;
+    box-sizing: border-box;
+    widows: 1;
+    font-stretch: normal;
+    background-color: rgb(255, 255, 255);
+}
+
+img.resp {
+    height: 217px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 217px;
+}
+.thumbnail {
+    min-height: 400px;
+}
+.video-play {
+    background: transparent url("//kb.informatica.com/_layouts/IFM.SupportTVYouTube/YouTube/img/video-play.png") no-repeat 0 0;
+    display: block;
+    height: 69px;
+    left: 50%;
+    margin: -35px 0 0 -35px;
+    position: absolute;
+    top: 30%;
+    width: 69px;
